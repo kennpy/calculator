@@ -59,8 +59,6 @@ def button_equal():
         e.insert(0, factorial(f_num))
     if math == "sqrt":
         e.insert(0, round(sqrt(float(second_number)), 5)) 
-    if math == 'mantissa':
-        e.insert(0, frexp(float(f_num)))
     if math == "power":
         e.insert(0, round(f_num ** float(second_number), 5)) 
     if math == "log":
