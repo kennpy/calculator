@@ -2,20 +2,12 @@ from tkinter import *
 from random import choice
 from math import pi, sin, cos, tan, factorial, sqrt, asin, acos, atan, log10, frexp
 
-#log function returns natural log of a number
 
 root = Tk()
 root.title('Simple Calculator')
 
 e = Entry(root, width = 35, borderwidth = 5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
-
-#TODO
-# add button for pi
-# add buttons for trig 
-# add one for power (can use ** ,, dont need a defined function just define it in clear function)
-# 
-
 
 def button_click(number):
     current = e.get()
@@ -24,8 +16,8 @@ def button_click(number):
 
 def button_clear():
     e.delete(0, END)
-#Define Buttons
 
+#Define Buttons
 
 def button_equal():
     second_number = e.get()
@@ -73,6 +65,7 @@ def button_equal():
     if math == "log":
         e.insert(0, round(log10(float(second_number)), 5)) 
 
+
 def button_add():
     first_number = e.get()
     global f_num 
@@ -80,7 +73,6 @@ def button_add():
     math = "addition"
     f_num = float(first_number)
     e.delete(0, END)
-
 
 
 def button_subtract():
@@ -211,8 +203,6 @@ button_cosh= Button(root, text = 'acos', activebackground = choice(colors), padx
 button_tanh = Button(root, text = 'atan', activebackground = choice(colors), padx = 40, pady = 20, command = button_tanh)
 button_power = Button(root, text = 'x^y', activebackground = choice(colors), padx = 42, pady = 20, command = button_power)
 button_log = Button(root, text = 'log 10', activebackground =choice(colors), padx = 35, pady = 20, command = button_log)
-
-
 
 #Put the buttons on the screen
 
