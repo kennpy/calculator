@@ -167,8 +167,10 @@ def button_log():
 def random_color(list_of_colors):
     return choice(list_of_colors)
 
-#Creating the buttons
+#List of colors to be selected randomly and set as a widget backgroud color
 colors = ['red', 'black', 'gray', 'blue', 'yellow', 'purple', 'orange', 'green', 'white']
+
+#Creating the buttons
 
 button_1 = Button(root, text = '1', activebackground = choice(colors), padx = 38, pady = 20, command = lambda: button_click(1))
 button_2 = Button(root, text = '2', activebackground = choice(colors), padx = 38, pady = 20, command = lambda: button_click(2))
