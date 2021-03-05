@@ -155,6 +155,7 @@ def button_log():
     math = "log"
     e.delete(0, END)
 
+# Takes in list and returns random element (color)
 def random_color(list_of_colors):
     return choice(list_of_colors)
 
