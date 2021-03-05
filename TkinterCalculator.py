@@ -6,6 +6,7 @@ from math import pi, sin, cos, tan, factorial, sqrt, asin, acos, atan, log10, fr
 root = Tk()
 root.title('Simple Calculator')
 
+#Create and place entry box
 e = Entry(root, width = 35, borderwidth = 5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
