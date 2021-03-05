@@ -2,7 +2,7 @@ from tkinter import *
 from random import choice
 from math import pi, sin, cos, tan, factorial, sqrt, asin, acos, atan, log10, frexp
 
-
+# Create the window
 root = Tk()
 root.title('Simple Calculator')
 
