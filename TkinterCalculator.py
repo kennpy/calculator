@@ -127,15 +127,6 @@ def button_sqrt():
     math = "sqrt"
     e.delete(0, END)
 
-def button_mantissa():
-    first_number = e.get()
-    global f_num 
-    global math
-    f_num = float(first_number)
-    math = "mantissa"
-    e.delete(0, END)
-
-
 def button_sinh():
     global math
     math = "sinh"
